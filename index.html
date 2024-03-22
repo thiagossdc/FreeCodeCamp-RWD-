@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Your Feedback Matters</h1>
+    <p id="description">
+      Help us improve by sharing your thoughts in this short survey.
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Your Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <label for="email" id="email-label">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="number" id="number-label">Number (1-10):</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        min="2"
+        max="10"
+        placeholder="Enter a number between 1 and 10"
+        required
+      />
+      <label for="dropdown">Select an option:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 3</option>
+      </select>
+
+      <label>What is your favorite feature?</label>
+      <br />
+      <input type="radio" id="radio1" name="feature" value="feature1" /> Feature
+      1
+      <label for="radio1">Feature 1</label>
+      <br />
+      <input type="radio" id="radio2" name="feature" value="feature2" /> Feature
+      2
+      <label for="radio2">Feature 2</label>
+      <br />
+
+      <label>How would you rate these aspects?</label>
+      <br />
+      <input type="checkbox" id="checkbox1" name="aspect" value="aspect1" />
+      Aspect 1
+      <label for="checkbox1">Aspect 1</label>
+      <br />
+      <input type="checkbox" id="checkbox2" name="aspect" value="aspect2" />
+      Aspect 2
+      <label for="checkbox2">Aspect 2</label>
+      <br />
+
+      <label for="comments">Additional Comments:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        placeholder="Share your feedback here"
+      ></textarea>
+      <button type="submit" id="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>
